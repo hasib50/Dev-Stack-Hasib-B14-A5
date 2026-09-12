@@ -1,15 +1,11 @@
-import './App.css'
+import Nav from "./components/Nav";
 
-function App() {
-  
-
+const App = () => {
   return (
-    <>
-      <h2 className='text-5xl text-red-500'>Dav STack</h2>
-      <button className="btn btn-outline btn-error">Error</button>
+    <div className="min-h-screen bg-white">
+      <Nav />
+    </div>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
