@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 const App = () => {
   const handleExplore = () => {
@@ -12,6 +13,7 @@ const App = () => {
     <div className="min-h-screen bg-white">
       <Nav />
       <Banner onExplore={handleExplore} />
+      <Footer />
     </div>
   );
 };
