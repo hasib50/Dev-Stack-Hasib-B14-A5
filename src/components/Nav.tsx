@@ -14,11 +14,23 @@ const Nav = () => {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white">
-      <div className="mx-auto flex h-[54px] max-w-6xl items-center justify-between px-5 lg:px-6">
+      <div className="mx-auto flex h-13.5 max-w-6xl items-center justify-between px-5 lg:px-6">
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-xl text-slate-700 lg:hidden"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
 
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600 text-[9px] font-bold text-white">
+        <a
+          href="#home"
+          className="flex items-center gap-2 lg:mr-auto"
+        >
+          <span className="brand-gradient-bg flex h-6 w-6 items-center justify-center rounded-md text-[9px] font-bold text-white">
             DS
           </span>
 
@@ -28,7 +40,7 @@ const Nav = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-7 lg:flex lg:mx-auto">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -45,24 +57,26 @@ const Nav = () => {
         </div>
 
         {/* Desktop Buttons */}
-        <div className="hidden items-center gap-1.5 sm:flex">
+        <div className="hidden items-center gap-1.5 lg:flex lg:ml-auto">
           <button className="px-3 py-2 text-[11px] font-medium text-slate-600 transition hover:text-pink-500">
             Sign In
           </button>
 
-          <button className="rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-4 py-2 text-[11px] font-semibold text-white transition hover:opacity-90">
+          <button className="brand-gradient-bg rounded-full px-4 py-2 text-[11px] font-semibold text-white transition hover:opacity-90">
             Sign Up
           </button>
         </div>
 
-        {/* Mobile Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-xl text-slate-700 lg:hidden"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <FiX /> : <FiMenu />}
-        </button>
+        {/* Mobile Buttons */}
+        <div className="flex items-center gap-1.5 lg:hidden">
+          <button className="px-2 py-2 text-[10px] font-medium text-slate-600 transition hover:text-pink-500">
+            Sign In
+          </button>
+
+          <button className="brand-gradient-bg rounded-full px-3 py-1.5 text-[10px] font-semibold text-white transition hover:opacity-90">
+            Sign Up
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -83,16 +97,6 @@ const Nav = () => {
                 {link.name}
               </a>
             ))}
-
-            <div className="flex gap-3 border-t border-gray-100 pt-3">
-              <button className="text-sm text-slate-600">
-                Sign In
-              </button>
-
-              <button className="rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-4 py-2 text-sm font-semibold text-white">
-                Sign Up
-              </button>
-            </div>
           </div>
         </div>
       )}

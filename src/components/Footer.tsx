@@ -4,7 +4,7 @@ const Footer = () => {
       id="contact"
       className="mt-12 border-t border-slate-100 bg-white"
     >
-      {/* M Footer */}
+      {/* Main Footer */}
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-2 lg:grid-cols-[1.4fr_0.7fr_0.7fr_0.7fr] lg:px-6">
 
         {/* Brand */}
@@ -13,7 +13,7 @@ const Footer = () => {
             href="#home"
             className="flex items-center gap-2"
           >
-            <span className="flex h-6 w-6 items-center justify-center rounded-md bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 text-[9px] font-bold text-white">
+            <span className="brand-gradient-bg flex h-6 w-6 items-center justify-center rounded-md text-[9px] font-bold text-white">
               DS
             </span>
 
@@ -23,8 +23,8 @@ const Footer = () => {
           </a>
 
           <p className="mt-3 max-w-xs text-xs leading-5 text-slate-400">
-            Curated, technologies, and resources for developers building
-            modern software.
+            Curated technologies, tools, and resources for developers
+            building modern software.
           </p>
 
           {/* Social Links */}
@@ -167,7 +167,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* B Footer */}
+      {/* Bottom Footer */}
       <div className="border-t border-slate-100">
         <div className="mx-auto max-w-6xl px-5 py-5 lg:px-6">
           <div className="flex items-center justify-between text-[10px] text-slate-400">

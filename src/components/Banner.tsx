@@ -8,7 +8,6 @@ const Banner = ({ onExplore }: BannerProps) => {
   return (
     <section id="home" className="bg-white">
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-12 md:py-14 lg:grid-cols-2 lg:px-6">
-
         <div>
           <h1 className="max-w-xl text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
             Build Your Ideal
@@ -26,7 +25,7 @@ const Banner = ({ onExplore }: BannerProps) => {
           <div className="mt-6 flex flex-wrap gap-3">
             <button
               onClick={onExplore}
-              className="rounded-lg bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 px-5 py-2.5 text-xs font-semibold text-white transition hover:opacity-90"
+              className="brand-gradient-bg rounded-lg px-5 py-2.5 text-xs font-semibold text-white transition hover:opacity-90"
             >
               Explore Technologies
             </button>
@@ -47,7 +46,6 @@ const Banner = ({ onExplore }: BannerProps) => {
             className="w-full max-w-md object-contain"
           />
         </div>
-
       </div>
     </section>
   );
