@@ -1,5 +1,5 @@
 import type { Technology } from "../../types";
-
+import TechnologyCard from "./TechnologyCard";
 
 interface AvailableTechnologiesProps {
   technologies: Technology[];
