@@ -6,7 +6,7 @@ Users can see the technology name, category, difficulty and rating. They can als
 
 ## Live Website
 
-https://dav-stack-hasib-b14.vercel.app
+https://dev-stack-hasib-b14-a5.vercel.app/
 
 ## Technologies Used
 
