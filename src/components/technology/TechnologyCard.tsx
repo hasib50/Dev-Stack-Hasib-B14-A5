@@ -49,14 +49,14 @@ const TechnologyCard = ({
           {technology.name}
         </h3>
 
-        <p className="mt-2 min-h-[54px] text-xs font-normal leading-5 text-slate-400">
+        <p className="mt-2 min-h-13.5 text-xs font-normal leading-5 text-slate-400">
           {technology.description}
         </p>
       </div>
 
       {/* Info, Category, Difficulty and Rating */}
       
-      <div className="mt-3 flex min-h-[28px] items-center gap-3">
+      <div className="mt-3 flex min-h-7 items-center gap-3">
         
         <span className="rounded-md bg-slate-50 px-2.5 py-1.5 text-[9px] font-medium text-slate-500">
           {technology.category}

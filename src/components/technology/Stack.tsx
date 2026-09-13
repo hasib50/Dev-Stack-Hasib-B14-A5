@@ -24,7 +24,7 @@ const Stack = ({
       </p>
 
       {selectedTechnologies.length === 0 ? (
-        <div className="mt-4 flex h-[67px] items-center justify-center rounded-xl border border-dashed border-slate-200">
+        <div className="mt-4 flex h-16.75 items-center justify-center rounded-xl border border-dashed border-slate-200">
           <p className="text-xs text-slate-400">
             Your stack is empty.
           </p>

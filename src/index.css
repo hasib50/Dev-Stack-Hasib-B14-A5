@@ -45,7 +45,12 @@ a {
 }
 
 .technologies-gradient {
-  background: var(--brand-gradient);
+  background: linear-gradient(
+    90deg,
+    #ec4899 0%,
+    #d946a6 50%,
+    #a855f7 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
