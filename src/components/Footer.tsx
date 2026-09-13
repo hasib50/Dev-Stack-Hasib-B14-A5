@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
 
           {/* Social Links */}
-          <div className="mt-4 flex gap-5">
+          <div className="mt-4 flex justify-center gap-5 md:justify-start">
             <a
               href="https://github.com"
               target="_blank"
